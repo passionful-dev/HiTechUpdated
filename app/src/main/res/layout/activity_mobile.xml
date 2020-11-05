@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MobileActivity">
+
+    <TextView
+        android:text="@string/cover_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover_heading"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:text="@string/cover_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover_heading"
+        android:layout_marginTop="3dp"
+        android:id="@+id/cover_login_tv"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        />
+
+
+    <EditText
+        android:hint="@string/cover_login_username_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover_heading"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/cover_login_username_et"
+        />
+
+    <EditText
+        android:hint="@string/cover_login_passwd_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover_login_username_et"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/cover_login_passwd_et"
+        android:password="true"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover_signIn_btn"
+        android:layout_below="@+id/cover_login_passwd_et"
+        android:layout_centerInParent="true"
+        android:text="@string/cover_login_btn"
+        android:onClick="onClickSignIn"
+        />
+
+    <TextView
+        android:text="@string/cover_error_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cover_signIn_btn"
+        android:id="@+id/cover_error_tv"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textStyle="bold"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/errorColor"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover_newRegister_btn"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cover_newCreateAccount_btn"
+        android:onClick="onClickCreateNewAccount"
+        />
+
+
+</RelativeLayout>

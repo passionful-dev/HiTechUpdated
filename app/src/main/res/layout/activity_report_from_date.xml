@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.practice.hitech.ReportFromDateActivity">
+
+    <TextView
+        android:id="@+id/reportFromDate_userOnline_tv"
+        android:text="@string/reportFromDate_userOnline_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_heading"
+        android:text="@string/reportFromDate_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textStyle="bold"
+        android:layout_below="@+id/reportFromDate_userOnline_tv"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/reportFromDate_back"
+        android:text="@string/reportFromDate_back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/reportFromDate_heading"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBack"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_date"
+        android:text="@string/reportFromDate_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_dateGet"
+        android:text="@string/reportFromDate_dateGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_location"
+        android:text="@string/reportFromDate_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_dateGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_locationGet"
+        android:text="@string/reportFromDate_locationGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_dateGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_actType"
+        android:text="@string/reportFromDate_actType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_locationGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_actTypeGet"
+        android:text="@string/reportFromDate_actTypeGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_locationGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_feedback"
+        android:text="@string/reportFromDate_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_actTypeGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_feedbackGet"
+        android:text="@string/reportFromDate_feedbackGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_actTypeGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_address"
+        android:text="@string/reportFromDate_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_feedbackGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_addressGet"
+        android:text="@string/reportFromDate_addressGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_feedbackGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_remarks"
+        android:text="@string/reportFromDate_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_addressGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/reportFromDate_remarksGet"
+        android:text="@string/reportFromDate_remarksGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/reportFromDate_addressGet"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        />
+
+</RelativeLayout>

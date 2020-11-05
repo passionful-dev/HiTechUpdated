@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- For the resting Spinner style -->
+        <item name="android:spinnerItemStyle">
+            @style/spinnerItemStyle
+        </item>
+
+        <!-- For each individual Spinner list item once clicked on -->
+        <!--<item name="android:spinnerDropDownItemStyle">
+            @style/spinnerDropDownItemStyle
+        </item>-->
+
+    </style>
+
+    <!-- Error color -->
+    <color name="errorColor">#ff0000</color>
+
+    <!-- Changing the text size of spinner-->
+    <style name="spinnerItemStyle">
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:textColor">#FFFFFF</item>-->
+    </style>
+
+    <!--<style name="spinnerDropDownItemStyle">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>-->
+
+
+</resources>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.practice.hitech.ReportActivity">
+
+    <TextView
+        android:id="@+id/report_userOnline_tv"
+        android:text="@string/report_userOnline_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/report_heading"
+        android:text="@string/report_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textStyle="bold"
+        android:layout_below="@+id/report_userOnline_tv"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/report_back"
+        android:text="@string/report_back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/report_heading"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickReportBack"
+        />
+
+    <!--<Spinner-->
+    <!--android:id="@+id/report_activityType"-->
+    <!--android:text="@string/report_activityType"-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/report_heading"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:entries="@array/report_activityType"/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/report_feedback"-->
+    <!--android:text="@string/report_feedback"-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@+id/report_heading"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:entries="@array/report_feedback"/>-->
+
+    <ListView
+        android:id="@+id/report_listReportByDate"
+        android:text="string/report_listReportByDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp">
+
+    </ListView>
+
+</RelativeLayout>
